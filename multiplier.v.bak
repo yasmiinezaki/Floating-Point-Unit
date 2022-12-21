@@ -1,0 +1,6 @@
+module multiplier (input reg A [31:0], input reg B[31:0],output [31:0] out);
+
+
+
+
+endmodule

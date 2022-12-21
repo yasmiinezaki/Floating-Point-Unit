@@ -1,0 +1,28 @@
+module mult_normalize(expsize, mantsize, in_exp, in_mant, out_exp, out_mant);
+
+	input [31:0] expsize, mantsize;
+	integer [31:0] expsize, mantsize;
+	
+	input [expsize-1:0] in_exp,out_exp;
+	input [(2*(mantsize)+1):0] in_mant;
+	output [(2*(mantsize)+1):0] out_mant;
+
+	wire [7:0] in_exp,out_exp;
+	wire [(2*(mantsize)+1):0] in_mant,out_mant;
+	reg [7:0] out_e;
+	reg [47:0] out_m;
+	   if(product[(2*(mant_bits)+1)] == 1) //if most significant is 1, normalization is needed
+		begin
+      exp_out = exp_out + 1;
+      product = product >> 1; //shift result right
+      end 
+		else if((product[2*(mant_bits)] != 1) && (exp_out != 0)) //if most significant was zero and second most significant is also zero and exp not zero then normalize
+		begin
+      i_e = o_exponent;
+      i_m = product;
+      o_exponent = o_e;
+      product = o_m;
+      end
+		o_mantissa = product[46:23];
+
+endmodule
