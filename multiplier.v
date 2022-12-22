@@ -1,37 +1,27 @@
 
-module multiplier #(parameter X =32, parameter expo_bits, parameter mant_bits)(input wire A [X-1:0], input wire B[X-1:0],output reg [X-1:0] out, output reg done);
+module multiplier #(parameter X =32)(input wire [X-1:0]A, input wire [X-1:0]B,output reg [X-1:0] out, output reg done);
+
+localparam expo_bits = (X == 32) ? 8 : 11; 
+localparam mant_bits = (X == 32) ? 23 : 52;
 
 	reg [expo_bits-1:0] exp_a; 
 	reg [expo_bits-1:0] exp_b;
 	reg [mant_bits-1:0]mant_a; //23 bits in case of 32 bit input
 	reg [mant_bits-1:0]mant_b;
-	reg [mant_bits-1:0]mant_a_2; //24 bits in case of 32 bit input
-	reg [mant_bits-1:0]mant_b_2;
+
 
 	reg [mant_bits-1:0] mant_out;
 	reg [expo_bits-1:0] exp_out;
 	reg sign;
 	
-	reg [(2*(mant_bits)+1):0] product; //48 in case of 32 bit input (man bits 23) and 106 in case of 64 bit input therefore 2*(man_bits+1) therefore from 2*(man_bits+1)-1 to 0
+	reg [(2*(mant_bits)+1):0] product; //48 (i.e. [47:0]) in case of 32 bit input (man bits 23) and 106 in case of 64 bit input therefore 2*(man_bits+1) therefore from 2*(man_bits+1)-1 to 0
 
-	
-	wire [7:0] norm_exp;
-	wire [47:0] norm_mant;
-	
-	integer mantissa;
-	integer exp;
-	
-	mult_normalize norm (
-		.expsize(expo_bits),
-		.mantsize(mant_bits),
-		.in_exp(exp_out),
-		.in_mant(product),
-		.out_exp(norm_exp),
-		.out_mant(norm_mant)
-	);
 	
 always @ (*)
 begin
+
+	done=1'b0; //at the beginning reset done bit
+	
 	//1. calculate sign bit (general even for special numbers)
 	
 	sign=A[X-1]^B[X-1]; //XOR of 2 input bits
@@ -64,7 +54,7 @@ begin
 	end
 	
 	/*
-	case 3: 0*num or num*0 or 0*0 -> 0
+	case 3: 0*num or num*0 or 0*0 -> 0 (TO-DO)
 	else if(...)
 	begin
 	...
@@ -100,52 +90,39 @@ begin
 	//Normal case:
 	begin
 	
-	//First check if exponent of either inputs is equal to 0 (double check from TA)
-		if(exp_a == 0) 
+	//2. add exponents of both numbers (exp_a and exp_b) then subtract bias from the result (TO-DO) -> No need for module
+	//store result in exp_out
+	
+	
+	//3. multiply the mantissas. Note: 1.mantissaA * 1.mantissaB therefore mant_a_2 * mant_b_2
+	    product = {{1'b1}, mant_a} * {{1'b1},mant_b};
+	
+	//4. normalize and truncate (module) (note this will affect exponent)
+	
+		if(product[(2*(mant_bits)+1)] == 1) //if most significant (47 in 32 bits) is 1, normalization is needed
 		begin
-			exp_a = {{(expo_bits-1){1'b0}},1'b1};
-			mant_a_2 = {{1'b0}, mant_a};
-		end 
-		else 
+      exp_out = exp_out + 1;
+      product = product >> 1;
+		mant_out = product[45:23];
+      end 
+		else if((product[2*(mant_bits)] != 1) && (exp_out != 0)) //if most significant was zero and second most significant is also zero then normalize again
 		begin
-			mant_a_2 = {{1'b1}, mant_a};
-		end
+		exp_out = exp_out - 1;
+		product = product << 1; 
+      end
 		
-		if(exp_b == 0) 
-		begin
-			exp_b = {{(expo_bits-1){1'b0}},1'b1};
-			mant_b_2 = {{1'b0}, mant_b};
-		end 
-		else
-		begin
-			mant_b_2 = {{1'b1}, mant_b};
-		end
-		
-		
-	
-	//2. add exponents of both numbers then subtract bias from the result (module)
-	
-	//3. multiply the mantissas (module) Note: 1.mantissaA * 1.mantissaB therefore mant_a_2 * mant_b_2
-	    product = mant_a_2 * mant_b_2;
-	
-	//4. normalize (module) (note this will affect exponent)
-	
-		//make use of module
-		exp_out=norm_exp;
-		product=norm_mant;
-	
-	
+		/*
+		output mantissa of size 46 for 32 bits is [45:0]
+		to truncate take product[45:23] in case of 32 bits:
+		*/
+		mant_out = product[(2*(mant_bits)-1):((2*(mant_bits)-1)-mant_bits+1)];
 
-	//5. overflow or underflow (depending on size of exponent) exit. accepted: 254>= exponent>=1
+	//5. overflow or underflow (depending on size of exponent) exit. accepted: 254>= exponent>=1 (TO-DO)
 	
-	//6. rounding module the product [22:0] at bit new_mantissa[23] if it's 0
 	
-	//7. normalize again if needed
-	
-	//8. check Overflow or underflow again
-	
-	//9. store final answer and set done bit
-
+	//6. store final answer and set done bit
+		out={sign, exp_out, mant_out};
+		done=1'b1;
 
 	end
 	
