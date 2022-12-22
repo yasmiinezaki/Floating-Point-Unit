@@ -103,7 +103,6 @@ begin
 		begin
       exp_out = exp_out + 1;
       product = product >> 1;
-		mant_out = product[45:23];
       end 
 		else if((product[2*(mant_bits)] != 1) && (exp_out != 0)) //if most significant was zero and second most significant is also zero then normalize again
 		begin
