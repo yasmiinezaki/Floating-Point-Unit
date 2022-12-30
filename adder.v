@@ -1,5 +1,5 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
 module adder #(parameter X =32, parameter expo_bits = 8)(input [X-1:0] A, input [X-1:0] B,output [X-1:0] out,output done);
 reg [expo_bits-1:0] exp_a; // 8/11 bit exponent
 reg [expo_bits-1:0] exp_b;
@@ -116,14 +116,14 @@ assign out[X-1] = sign_out;
 assign out[X-2:X-expo_bits-1] = exp_normalizer_out;
 assign out[X-expo_bits-2:0] = mant_normalizer_out;
 
-=======
+//=======
 module adder #(parameter X =32, parameter expo_bits = 8)(input [X-1:0] A, input [X-1:0] B,output [X-1:0] out,output done);
-=======
+//=======
 module adder #(parameter X =32)(input [X-1:0] A, input [X-1:0] B,output [X-1:0] out,output reg done,output overflow,output underflow);
 localparam expo_bits = (X == 32) ? 8 : 11; 
 localparam mant_bits = (X == 32) ? 23 : 52;
 
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
 reg [expo_bits-1:0] exp_a; // 8/11 bit exponent
 reg [expo_bits-1:0] exp_b;
 reg [X-expo_bits-1:0]mant_a; // 24/53 bit mantissa (1 for the 1 before the floating point and 23/52 from the input)
@@ -131,10 +131,10 @@ reg [X-expo_bits-1:0]mant_b;
 reg a_sign;
 reg b_sign;
 
-<<<<<<< Updated upstream
-=======
+//<<<<<<< Updated upstream
+//=======
 reg carry;
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
 reg [X-expo_bits:0] mant_out; // 25 bit output mantissa for any carry that occurs during addition
 reg [expo_bits-1:0] exp_out;
 reg sign_out;
@@ -147,7 +147,7 @@ wire [X-expo_bits:0] mant_normalizer_out;
 reg [expo_bits-1:0] exp_normalizer_in;
 wire [expo_bits-1:0] exp_normalizer_out;
 
-<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
 adder_normalizer #(.X(X), .expo_bits(expo_bits)) inst (mant_normalizer_in,exp_normalizer_in,mant_normalizer_out,exp_normalizer_out);
 
 always @ (*)
@@ -161,7 +161,7 @@ begin
 	exp_a = A[X-2:X-expo_bits-1];
 	exp_b = B[X-2:X-expo_bits-1];
 	
-=======
+//=======
 adder_normalizer #(.X(X),.expo_bits(expo_bits)) inst (mant_normalizer_in,exp_normalizer_in,mant_normalizer_out,exp_normalizer_out,underflow);
 
 always @ (*)
@@ -185,7 +185,7 @@ begin
 	
 
 	
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
 	// add where A and B have equal signs
 	if (a_sign == b_sign)
 	begin
@@ -212,11 +212,11 @@ begin
 			
 			mant_out = mant_b +mant_temp;
 			sign_out = a_sign;
-<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
 			exp_out = exp_b;			
-=======
+//=======
 			exp_out = exp_b;	
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
 		end
 	end
 	else // sub else sign a is not equal sign b
@@ -262,7 +262,7 @@ begin
 	// remove carry if existing at bit 24 and shift right
 	if (mant_out[X-expo_bits] == 1'b1) // if last bit in output mantissa has carry
 	begin
-<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
 		mant_out = mant_out >> 1;
 		exp_out = exp_out + 1;
 	end else if( mant_out[X-expo_bits-1] == 1'b0 ) // normalize if there is no 1 at bit 23
@@ -274,8 +274,8 @@ assign out[X-1] = sign_out;
 assign out[X-2:X-expo_bits-1] = exp_normalizer_out;
 assign out[X-expo_bits-2:0] = mant_normalizer_out;
 
->>>>>>> Stashed changes
-=======
+//>>>>>>> Stashed changes
+//=======
 		
 		mant_out = mant_out >> 1;
 		{carry,exp_out} = exp_out + 1;
@@ -294,5 +294,5 @@ assign out[X-2:X-expo_bits-1] = exp_out;
 assign out[X-expo_bits-2:0] = mant_out[X-expo_bits-2:0];
 assign overflow = carry;
 
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
 endmodule 
