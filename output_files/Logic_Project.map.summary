@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Failed - Thu Dec 22 00:27:03 2022
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Analysis & Synthesis Status : Failed - Fri Dec 30 19:18:26 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Logic_Project
-Top-level Entity Name : Logic_Project
+Top-level Entity Name : goldschmidtSV_tb
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

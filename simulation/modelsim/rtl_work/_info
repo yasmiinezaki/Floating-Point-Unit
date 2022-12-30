@@ -7,26 +7,74 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dG:/Sem 7/Logic 2/Project/simulation/modelsim
-vadder
-!s110 1671691661
+Z0 dD:/DriveFiles/Shared_Folder/Floating-Point-Unit/simulation/modelsim
+vgoldschmidt
+Z1 !s110 1672419498
 !i10b 1
-!s100 17@@LoYgn9_RF:gTXl0hU2
-IZ8kj1c9J;lKYeCBn09F>n0
-VDg1SIo80bB@j0V0VzS_@n1
+!s100 iHfKn88Zl>jASF8]=I_XF2
+InQ8i0?JaD;gQKG9[U6`@^2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1671691641
-8G:/Sem 7/Logic 2/Project/adder.v
-FG:/Sem 7/Logic 2/Project/adder.v
+w1672419464
+8D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt.v
+FD:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt.v
 L0 1
-OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1671691661.000000
-!s107 G:/Sem 7/Logic 2/Project/adder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/Sem 7/Logic 2/Project|G:/Sem 7/Logic 2/Project/adder.v|
+!s108 1672419497.000000
+!s107 D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit|D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt.v|
 !i113 1
-o-vlog01compat -work work
-!s92 -vlog01compat -work work {+incdir+G:/Sem 7/Logic 2/Project}
-tCvgOpt 0
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit
+Z6 tCvgOpt 0
+vgoldschmidt_tb
+R1
+!i10b 1
+!s100 dZMz2Ne<8K_AEVdibJ;4A1
+IcY7<;BXzI3V?Thf2RfNo31
+R2
+R0
+w1672418412
+8D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v
+FD:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z7 !s108 1672419498.000000
+!s107 D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit|D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v|
+!i113 1
+R4
+R5
+R6
+vgoldschmidtSV_tb
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 VcgCFC69Uf<JV9gVec2iN0
+IC;8@g07NZYW]MZEgRbkF02
+R2
+!s105 goldschmidtSV_tb_sv_unit
+S1
+R0
+w1672419209
+8D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtSV_tb.sv
+FD:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtSV_tb.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtSV_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit|D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtSV_tb.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit
+R6
+ngoldschmidt@s@v_tb

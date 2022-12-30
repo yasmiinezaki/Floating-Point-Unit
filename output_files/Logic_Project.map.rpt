@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Logic_Project
-Thu Dec 22 00:27:03 2022
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Fri Dec 30 19:18:26 2022
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -17,9 +17,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -29,18 +29,17 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Thu Dec 22 00:27:03 2022           ;
-; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status ; Failed - Fri Dec 30 19:18:26 2022           ;
+; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; Logic_Project                               ;
-; Top-level Entity Name       ; Logic_Project                               ;
+; Top-level Entity Name       ; goldschmidtSV_tb                            ;
 ; Family                      ; Cyclone V                                   ;
 ; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
 ; Total registers             ; N/A until Partition Merge                   ;
@@ -58,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; Logic_Project      ; Logic_Project      ;
+; Top-level entity name                                                           ; goldschmidtSV_tb   ; Logic_Project      ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -160,28 +159,42 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Dec 22 00:26:34 2022
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Fri Dec 30 19:18:14 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Logic_Project -c Logic_Project
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Error (10171): Verilog HDL syntax error at adder_normalizer.v(179) near end of file ;  expecting "endmodule" File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder_normalizer.v Line: 179
+Info (12021): Found 0 design units, including 0 entities, in source file adder_normalizer.v
+Error (10170): Verilog HDL syntax error at adder.v(165) near text: "#";  expecting "<=", or "=". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v Line: 165
+Error (10170): Verilog HDL syntax error at adder.v(165) near text: ",";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v Line: 165
+Error (10170): Verilog HDL syntax error at adder.v(165) near text: "inst";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v Line: 165
+Error (10170): Verilog HDL syntax error at adder.v(167) near text: "always";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v Line: 167
+Error (10170): Verilog HDL syntax error at adder.v(283) near text: "else";  expecting "endmodule". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v Line: 283
+Error (10170): Verilog HDL syntax error at adder.v(283) near text: "==";  expecting ".", or an identifier. Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v Line: 283
+Error (10170): Verilog HDL syntax error at adder.v(290) near text: "end"; "end" without "begin" . Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v Line: 290
+Error (10171): Verilog HDL syntax error at adder.v(298) near end of file ;  expecting "endmodule" File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v Line: 298
+Info (12021): Found 0 design units, including 0 entities, in source file adder.v
+Info (12021): Found 1 design units, including 1 entities, in source file fp_tb.sv
+    Info (12023): Found entity 1: fp_tb File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/fp_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder_tb.v
+    Info (12023): Found entity 1: adder_tb File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder_tb.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file multiplier.v
-    Info (12023): Found entity 1: multiplier File: C:/Users/MALAK/Desktop/Malak/Uni/Logic 2/Project/Floating-Point-Unit/multiplier.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file mult_normalize.v
-    Info (12023): Found entity 1: mult_normalize File: C:/Users/MALAK/Desktop/Malak/Uni/Logic 2/Project/Floating-Point-Unit/mult_normalize.v Line: 1
-Error (10773): Verilog HDL error at multiplier.v(1): declaring module ports or function arguments with unpacked array types requires SystemVerilog extensions File: C:/Users/MALAK/Desktop/Malak/Uni/Logic 2/Project/Floating-Point-Unit/multiplier.v Line: 1
-Error (10734): Verilog HDL error at mult_normalize.v(11): expsize is not a constant File: C:/Users/MALAK/Desktop/Malak/Uni/Logic 2/Project/Floating-Point-Unit/mult_normalize.v Line: 11
-Error (10734): Verilog HDL error at mult_normalize.v(6): expsize is not a constant File: C:/Users/MALAK/Desktop/Malak/Uni/Logic 2/Project/Floating-Point-Unit/mult_normalize.v Line: 6
-Error (10734): Verilog HDL error at mult_normalize.v(12): mantsize is not a constant File: C:/Users/MALAK/Desktop/Malak/Uni/Logic 2/Project/Floating-Point-Unit/mult_normalize.v Line: 12
-Error (10734): Verilog HDL error at mult_normalize.v(8): mantsize is not a constant File: C:/Users/MALAK/Desktop/Malak/Uni/Logic 2/Project/Floating-Point-Unit/mult_normalize.v Line: 8
-Error (10734): Verilog HDL error at mult_normalize.v(13): expsize is not a constant File: C:/Users/MALAK/Desktop/Malak/Uni/Logic 2/Project/Floating-Point-Unit/mult_normalize.v Line: 13
-Error (10734): Verilog HDL error at mult_normalize.v(7): expsize is not a constant File: C:/Users/MALAK/Desktop/Malak/Uni/Logic 2/Project/Floating-Point-Unit/mult_normalize.v Line: 7
-Error (10734): Verilog HDL error at mult_normalize.v(14): mantsize is not a constant File: C:/Users/MALAK/Desktop/Malak/Uni/Logic 2/Project/Floating-Point-Unit/mult_normalize.v Line: 14
-Error (10734): Verilog HDL error at mult_normalize.v(9): mantsize is not a constant File: C:/Users/MALAK/Desktop/Malak/Uni/Logic 2/Project/Floating-Point-Unit/mult_normalize.v Line: 9
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 9 errors, 1 warning
+    Info (12023): Found entity 1: multiplier File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/multiplier.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file goldschmidt.v
+    Info (12023): Found entity 1: goldschmidt File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file goldschmidt_tb.v
+    Info (12023): Found entity 1: goldschmidt_tb File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v Line: 1
+Warning (10229): Verilog HDL Expression warning at goldschmidtSV_tb.sv(19): truncated literal to match 32 bits File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtSV_tb.sv Line: 19
+Warning (10229): Verilog HDL Expression warning at goldschmidtSV_tb.sv(20): truncated literal to match 32 bits File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtSV_tb.sv Line: 20
+Info (12021): Found 1 design units, including 1 entities, in source file goldschmidtsv_tb.sv
+    Info (12023): Found entity 1: goldschmidtSV_tb File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtSV_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file goldschmidtversion2.v
+    Info (12023): Found entity 1: goldschmidtVersion2 File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v Line: 1
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 9 errors, 3 warnings
     Error: Peak virtual memory: 4767 megabytes
-    Error: Processing ended: Thu Dec 22 00:27:03 2022
-    Error: Elapsed time: 00:00:29
-    Error: Total CPU time (on all processors): 00:01:16
+    Error: Processing ended: Fri Dec 30 19:18:26 2022
+    Error: Elapsed time: 00:00:12
+    Error: Total CPU time (on all processors): 00:00:28
 
 

@@ -1,0 +1,30 @@
+module goldschmidt_tb();
+reg[31:0] dividend;
+reg[31:0] divisor;
+wire [31:0]quotient;
+wire [31:0]rem;
+wire  busy,ready;
+
+parameter DELAY = 2;
+reg clrn;
+
+initial begin
+	$display("time/tdividend/tdivisor/t
+	clrn = 1'b1;
+	#(DELAY/2) clrn = 1'b0;
+	start = 1'b1;
+	clk = 1'b0;
+	dividend = 10;
+	divisor = 2;
+end
+
+
+
+goldschmidt gs(dividend,divisor,start,clk,clrn,quotient,busy,ready,rem);
+
+
+
+
+
+
+endmodule
