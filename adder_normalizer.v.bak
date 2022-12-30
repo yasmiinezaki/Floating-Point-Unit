@@ -1,8 +1,0 @@
-<<<<<<< Updated upstream
-module adder_normalizer(input ,input ,output,output);
-
-=======
-module adder_normalizer(input ,input ,output,output);
-
->>>>>>> Stashed changes
-endmodule
