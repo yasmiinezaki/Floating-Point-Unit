@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CGXFC7C7F23C8
-set_global_assignment -name TOP_LEVEL_ENTITY goldschmidtVersion2
+set_global_assignment -name TOP_LEVEL_ENTITY goldschmidt_tb
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:49:49  DECEMBER 21, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -63,7 +63,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE fp_tb.sv
 set_global_assignment -name VERILOG_FILE multiplier.v
 set_global_assignment -name VERILOG_FILE goldschmidt.v
 set_global_assignment -name VERILOG_FILE goldschmidt_tb.v
-set_global_assignment -name SYSTEMVERILOG_FILE goldschmidtSV_tb.sv
 set_global_assignment -name VERILOG_FILE goldschmidtVersion2.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top

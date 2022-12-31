@@ -7,6 +7,7 @@ vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder_normalizer.v}
 vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v}
+vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v}
 vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v}
 
 vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v}

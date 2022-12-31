@@ -12,53 +12,59 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder_normalizer.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:05 on Dec 31,2022
+# Start time: 18:25:06 on Dec 31,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit" D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder_normalizer.v 
 # -- Compiling module adder_normalizer
 # 
 # Top level modules:
 # 	adder_normalizer
-# End time: 15:52:05 on Dec 31,2022, Elapsed time: 0:00:00
+# End time: 18:25:06 on Dec 31,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:06 on Dec 31,2022
+# Start time: 18:25:06 on Dec 31,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit" D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 15:52:06 on Dec 31,2022, Elapsed time: 0:00:00
+# End time: 18:25:06 on Dec 31,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:06 on Dec 31,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit" D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v 
-# -- Compiling module goldschmidtVersion2
-# ** Warning: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v(17): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v(19): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	goldschmidtVersion2
-# End time: 15:52:06 on Dec 31,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-# 
 # vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:52:06 on Dec 31,2022
+# Start time: 18:25:06 on Dec 31,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit" D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v 
 # -- Compiling module goldschmidt_tb
-# ** Warning: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v(19): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# ** Warning: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v(20): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # 
 # Top level modules:
 # 	goldschmidt_tb
-# End time: 15:52:06 on Dec 31,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
+# End time: 18:25:06 on Dec 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:25:06 on Dec 31,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit" D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v 
+# -- Compiling module goldschmidtVersion2
+# 
+# Top level modules:
+# 	goldschmidtVersion2
+# End time: 18:25:06 on Dec 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:25:06 on Dec 31,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit" D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v 
+# -- Compiling module goldschmidt_tb
+# 
+# Top level modules:
+# 	goldschmidt_tb
+# End time: 18:25:06 on Dec 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  goldschmidt
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" goldschmidt 
-# Start time: 15:52:06 on Dec 31,2022
+# Start time: 18:25:07 on Dec 31,2022
 # ** Error: (vsim-3170) Could not find 'goldschmidt'.
 #         Searched libraries:
 #             D:/CCE/Quartus/modelsim_ase/altera/verilog/altera
@@ -74,35 +80,5 @@
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
-# MACRO ./Logic_Project_run_msim_rtl_verilog.do PAUSED at line 14
-vsim work.goldschmidt_tb
-# vsim work.goldschmidt_tb 
-# Start time: 15:52:06 on Dec 31,2022
-# Loading work.goldschmidt_tb
-# Loading work.goldschmidtVersion2
-# Loading work.adder
-# Loading work.adder_normalizer
-# ** Warning: (vsim-3015) D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v(50): [PCDPC] - Port size (32) does not match connection size (64) for port 'B'. The port definition is at: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /goldschmidt_tb/gs/inst File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v
-# ** Warning: (vsim-3015) D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v(50): [PCDPC] - Port size (32) does not match connection size (64) for port 'out'. The port definition is at: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /goldschmidt_tb/gs/inst File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v
-add wave sim:/goldschmidt_tb/gs/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: omare  Hostname: OMARLAPTOP  ProcessID: 27956
-#           Attempting to use alternate WLF file "./wlft8f8tw6".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft8f8tw6
-run
-# time/tdividend/tdivisor/tquotient
-# 0/t         0/t         0/t         x/t         x
-# 2/t         0/t         0/t         0/t         0
-add wave sim:/goldschmidt_tb/*
-restart
-# ** Warning: (vsim-3015) D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v(50): [PCDPC] - Port size (32) does not match connection size (64) for port 'B'. The port definition is at: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /goldschmidt_tb/gs/inst File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v
-# ** Warning: (vsim-3015) D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v(50): [PCDPC] - Port size (32) does not match connection size (64) for port 'out'. The port definition is at: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /goldschmidt_tb/gs/inst File: D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v
-run
-# time/tdividend/tdivisor/tquotient
-# 0/t         0/t         0/t         x/t         x
-# 2/t         0/t         0/t         0/t         0
+# MACRO ./Logic_Project_run_msim_rtl_verilog.do PAUSED at line 15
+# A time value could not be extracted from the current line
