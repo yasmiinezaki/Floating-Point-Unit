@@ -16,8 +16,8 @@ initial begin
 	#(DELAY/4) clrn = 1'b1;
 	start = 1'b1;
 	clk = 1'b0;
-	dividend = 99;
-	divisor = 3;
+	dividend = 32'b0_10000000000_1100000000000000000000000000000000000000000000000000;
+	divisor = 32'b0_10000000000_0000000000000000000000000000000000000000000000000000;
 end
 
 always begin
@@ -27,7 +27,7 @@ always begin
 end
 
 
-goldschmidtVersion2 gs(dividend,divisor,start,clk,clrn,quotient,busy,ready,rem);
+goldschmidtVersion2 gs (dividend,divisor,start,clk,clrn,quotient,busy,ready,rem);
 
 
 
