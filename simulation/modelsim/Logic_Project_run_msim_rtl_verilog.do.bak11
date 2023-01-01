@@ -5,7 +5,9 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt.v}
+vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion3.v}
+vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/division.v}
+vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/division_tb.v}
 
 vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v}
 

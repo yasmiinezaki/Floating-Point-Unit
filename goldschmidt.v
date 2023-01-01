@@ -12,8 +12,8 @@ reg [63:0] reg_a; // x.xxxx...x
 reg [63:0] reg_b; // 0.xxxx...x
 reg [2:0] count;
 wire [63:0] two_minus_yi = ~reg_b + 1'b1; // 1's complement
-wire [127:0] xi = reg_a * two_minus_yi; // 0x.xxx...x
-wire [127:0] yi = reg_b * two_minus_yi; // 0x.xxx...x
+wire [127:0] xi = reg_a * two_minus_yi; 
+wire [127:0] yi = reg_b * two_minus_yi; 
 //assign q = reg_a[63:32] + |reg_a[31:29]; // rounding up
 assign q = reg_a[63:32];
 assign yn = reg_b[62:31];

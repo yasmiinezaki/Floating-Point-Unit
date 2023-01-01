@@ -10,61 +10,51 @@
 # Copying D:/CCE/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder_normalizer.v}
+# vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion3.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:25:06 on Dec 31,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit" D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder_normalizer.v 
-# -- Compiling module adder_normalizer
+# Start time: 06:22:47 on Jan 01,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit" D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion3.v 
+# -- Compiling module goldschmidtVersion3
 # 
 # Top level modules:
-# 	adder_normalizer
-# End time: 18:25:06 on Dec 31,2022, Elapsed time: 0:00:00
+# 	goldschmidtVersion3
+# End time: 06:22:47 on Jan 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v}
+# vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/division.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:25:06 on Dec 31,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit" D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v 
-# -- Compiling module adder
+# Start time: 06:22:47 on Jan 01,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit" D:/DriveFiles/Shared_Folder/Floating-Point-Unit/division.v 
+# -- Compiling module division
 # 
 # Top level modules:
-# 	adder
-# End time: 18:25:06 on Dec 31,2022, Elapsed time: 0:00:00
+# 	division
+# End time: 06:22:47 on Jan 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/division_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 06:22:47 on Jan 01,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit" D:/DriveFiles/Shared_Folder/Floating-Point-Unit/division_tb.v 
+# -- Compiling module division_tb
+# 
+# Top level modules:
+# 	division_tb
+# End time: 06:22:48 on Jan 01,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
 # vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:25:06 on Dec 31,2022
+# Start time: 06:22:48 on Jan 01,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit" D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v 
 # -- Compiling module goldschmidt_tb
 # 
 # Top level modules:
 # 	goldschmidt_tb
-# End time: 18:25:06 on Dec 31,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:25:06 on Dec 31,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit" D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v 
-# -- Compiling module goldschmidtVersion2
-# 
-# Top level modules:
-# 	goldschmidtVersion2
-# End time: 18:25:06 on Dec 31,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit {D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:25:06 on Dec 31,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit" D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v 
-# -- Compiling module goldschmidt_tb
-# 
-# Top level modules:
-# 	goldschmidt_tb
-# End time: 18:25:06 on Dec 31,2022, Elapsed time: 0:00:00
+# End time: 06:22:48 on Jan 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  goldschmidt
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" goldschmidt 
-# Start time: 18:25:07 on Dec 31,2022
+# Start time: 06:22:48 on Jan 01,2023
 # ** Error: (vsim-3170) Could not find 'goldschmidt'.
 #         Searched libraries:
 #             D:/CCE/Quartus/modelsim_ase/altera/verilog/altera
@@ -80,5 +70,28 @@
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
-# MACRO ./Logic_Project_run_msim_rtl_verilog.do PAUSED at line 15
-# A time value could not be extracted from the current line
+# MACRO ./Logic_Project_run_msim_rtl_verilog.do PAUSED at line 14
+vsim work.division_tb
+# vsim work.division_tb 
+# Start time: 06:22:48 on Jan 01,2023
+# Loading work.division_tb
+# Loading work.division
+# Loading work.goldschmidtVersion3
+add wave sim:/division_tb/divi/gs/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: omare  Hostname: OMARLAPTOP  ProcessID: 27956
+#           Attempting to use alternate WLF file "./wlftgicj0z".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftgicj0z
+run
+# time/tdividend/tdivisor/tquotient
+# 0/t01000001011110000000000000000000/t11000000010000000000000000000000/txxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/tx/tx
+restart
+add wave sim:/division_tb/divi/*
+run
+# time/tdividend/tdivisor/tquotient
+# 0/t01000001011110000000000000000000/t11000000010000000000000000000000/txxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/tx/tx
+restart
+run
+# time/tdividend/tdivisor/tquotient
+# 0/t01000001011110000000000000000000/t11000000010000000000000000000000/txxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/tx/tx

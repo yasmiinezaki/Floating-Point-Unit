@@ -1,0 +1,3 @@
+module division #(parameter X =32)
+(input wire [X-1:0]A, input wire [X-1:0]B,output reg [X-1:0] out);
+

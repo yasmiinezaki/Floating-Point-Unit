@@ -10,7 +10,7 @@ reg clrn;
 
 initial begin
 	$display("time/tdividend/tdivisor/tquotient");
-	$monitor("%g/t%d/t%d/t%d/t%d",$time,dividend,divisor,quotient,rem);
+	$monitor("%g/t%b/n%b/n%b/n%b",$time,dividend,divisor,quotient,rem);
 	clrn = 1'b1;
 	#(DELAY/4) clrn = 1'b0;
 	#(DELAY/4) clrn = 1'b1;
@@ -27,7 +27,7 @@ always begin
 end
 
 
-goldschmidtVersion2 gs (dividend,divisor,start,clk,clrn,quotient,busy,ready,rem);
+goldschmidtVersion2 gs (dividend,divisor,start,clk,clrn,quotient,ready,rem);
 
 
 

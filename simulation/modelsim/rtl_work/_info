@@ -8,58 +8,58 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/DriveFiles/Shared_Folder/Floating-Point-Unit/simulation/modelsim
-vadder
-Z1 !s110 1672503906
+vdivision
+Z1 !s110 1672546967
 !i10b 1
-!s100 3bJY;56DB7aF77TV0?Ui<3
-I=dnX?HkLGcaIB373B9B4<1
+!s100 Xf5j<_gIaoDEn@h_zi8;J3
+IIZMVGkIbJaK<XR`I9n0@<3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1672491991
-8D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v
-FD:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v
+w1672546931
+8D:/DriveFiles/Shared_Folder/Floating-Point-Unit/division.v
+FD:/DriveFiles/Shared_Folder/Floating-Point-Unit/division.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1672503906.000000
-!s107 D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit|D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder.v|
+Z4 !s108 1672546967.000000
+!s107 D:/DriveFiles/Shared_Folder/Floating-Point-Unit/division.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit|D:/DriveFiles/Shared_Folder/Floating-Point-Unit/division.v|
 !i113 1
 Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work +incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit
 Z7 tCvgOpt 0
-vadder_normalizer
-R1
+vdivision_tb
+Z8 !s110 1672546968
 !i10b 1
-!s100 O:T<e54;YlEJ2IEb5lazK2
-IT[cHIhLMJRWGY_XZ:nib:0
+!s100 P9S7em:cdYnzA>?2RVKJ62
+ID8_eg0hcBDiJ7kJgm93;13
 R2
 R0
-w1672491997
-8D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder_normalizer.v
-FD:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder_normalizer.v
+w1672544762
+8D:/DriveFiles/Shared_Folder/Floating-Point-Unit/division_tb.v
+FD:/DriveFiles/Shared_Folder/Floating-Point-Unit/division_tb.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder_normalizer.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit|D:/DriveFiles/Shared_Folder/Floating-Point-Unit/adder_normalizer.v|
+!s107 D:/DriveFiles/Shared_Folder/Floating-Point-Unit/division_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit|D:/DriveFiles/Shared_Folder/Floating-Point-Unit/division_tb.v|
 !i113 1
 R5
 R6
 R7
 vgoldschmidt_tb
-R1
+R8
 !i10b 1
-!s100 :6gVoWjTCcW[_STRWjX1@2
-IkhO=RcYk`imiXz4]]DL762
+!s100 cF=AS=k0;^n`jIK7?2hjC1
+I^iI?TLZjk^U_bHa8QZ:`Z3
 R2
 R0
-w1672502967
+w1672507094
 8D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v
 FD:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v
 L0 1
@@ -67,33 +67,33 @@ R3
 r1
 !s85 0
 31
-R4
+!s108 1672546968.000000
 !s107 D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit|D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidt_tb.v|
 !i113 1
 R5
 R6
 R7
-vgoldschmidtVersion2
+vgoldschmidtVersion3
 R1
 !i10b 1
-!s100 dLV70NL_R=i[92]T;2Z]f0
-IVecPoCH4ABB3oXkb1Bb;a1
+!s100 ]cX6lZhfP]m^oVXD743_l3
+I3hzk`P8R>C_jQbo68;cQP2
 R2
 R0
-w1672503444
-8D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v
-FD:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v
+w1672546579
+8D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion3.v
+FD:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion3.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit|D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion2.v|
+!s107 D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/DriveFiles/Shared_Folder/Floating-Point-Unit|D:/DriveFiles/Shared_Folder/Floating-Point-Unit/goldschmidtVersion3.v|
 !i113 1
 R5
 R6
 R7
-ngoldschmidt@version2
+ngoldschmidt@version3
